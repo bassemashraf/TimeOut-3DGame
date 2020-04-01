@@ -46,12 +46,12 @@ public class playercontroller : MonoBehaviour
         if (swipemanager.swipeLeft)
         {
             animator.SetBool("isSlide", false);
-            /** desiredline--;
+             desiredline--;
              if (desiredline == -1)
              {
                  desiredline = 0;
-             }**/
-            direction.x =-2;
+             }
+            
         }
         if (controller.isGrounded == true && swipemanager.swipeUp)
         {
