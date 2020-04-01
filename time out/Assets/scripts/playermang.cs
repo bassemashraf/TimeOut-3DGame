@@ -30,7 +30,7 @@ public class playermang : MonoBehaviour
         //m.save(5);
         //  PlayerPrefs.SetInt("HS", 2);
 
-        Highscore.text = "" + m.load();
+        Highscore.text = "HS: " + m.load();
         //Highscore.text= (PlayerPrefs.GetInt("HS")).ToString();
 
     }
@@ -39,7 +39,7 @@ public class playermang : MonoBehaviour
     void Update()
     {
 
-        Gamescore.text = "" + (int)scoree;
+        Gamescore.text = "Score: " + (int)scoree;
         //   Gamescore.text = "BASD";
 
 
@@ -71,7 +71,7 @@ public class playermang : MonoBehaviour
 
             // Highscore.text = (PlayerPrefs.GetInt("HS")).ToString();
             //Highscore.text = (mydata.load()).tostring;
-            Highscore.text = "" + m.load();
+            Highscore.text = "HS: " + m.load();
 
 
 
