@@ -40,7 +40,7 @@ public class playermang : MonoBehaviour
             gamestarted = true;
             Destroy(startingtext);
         }
-
+        //asdasdasssa
     }
   
    
