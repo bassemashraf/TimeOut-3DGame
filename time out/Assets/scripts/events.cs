@@ -23,9 +23,18 @@ public class events : MonoBehaviour
     {
         Application.Quit();
     }
-    public void revive()
+     public  void revive()
+     {
+        StartCoroutine(revive2());
+    }
+    private IEnumerator revive2()
     {
-        PlayerPrefs.SetString("R","true");
+        PlayerPrefs.SetString("R", "true");
+        playermang.revive = true;
+        yield return new WaitForSeconds(3.0f);
+        playermang.revive = false;
     }
 
 }
+
+

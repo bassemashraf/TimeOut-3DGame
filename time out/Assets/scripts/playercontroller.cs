@@ -104,7 +104,7 @@ public class playercontroller : MonoBehaviour
     }
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.transform.tag == "obastcle") 
+        if (hit.transform.tag == "obastcle" && playermang.revive==false) 
         {
             playermang.GameOver = true;
         }

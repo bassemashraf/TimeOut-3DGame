@@ -8,6 +8,7 @@ public class playermang : MonoBehaviour
     // Start is called before the first frame update
     public static bool GameOver;
     public static bool gamestarted;
+    public static bool revive;
     public GameObject gameoverpanel;
     public GameObject startingtext;
     public static float Timeseconds;
