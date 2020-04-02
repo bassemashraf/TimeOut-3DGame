@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 8865560922034765596}
   - component: {fileID: 7376519054380819698}
   - component: {fileID: 1945100190828557960}
+  - component: {fileID: 3095903049226773352}
   m_Layer: 0
   m_Name: RoadWorksBarrierLow
   m_TagString: obastcle
@@ -218,6 +219,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999996, z: 0.030086108}
   m_Center: {x: 0, y: 0, z: -0.0050430554}
+--- !u!114 &3095903049226773352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7317814192750300206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6821644af877a864e83eabe7ce99b564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colide: {fileID: 1945100190828557960}
 --- !u!1001 &677362101437916889
 PrefabInstance:
   m_ObjectHideFlags: 0

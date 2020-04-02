@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 6842738349247433794}
   - component: {fileID: 2350632222074624465}
   - component: {fileID: 3319310869222994490}
+  - component: {fileID: 5563757593194665200}
   m_Layer: 0
   m_Name: TrafficCone
   m_TagString: obastcle
@@ -218,6 +219,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0139999995, y: 0.013999997, z: 0.15377478}
   m_Center: {x: 0, y: 0, z: 0.06988739}
+--- !u!114 &5563757593194665200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6305556538769401564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6821644af877a864e83eabe7ce99b564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colide: {fileID: 3319310869222994490}
 --- !u!1001 &8397351398194930871
 PrefabInstance:
   m_ObjectHideFlags: 0

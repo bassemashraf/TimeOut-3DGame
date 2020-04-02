@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2756994708783550233}
   - component: {fileID: 506708393035421455}
   - component: {fileID: 8928223641012641915}
+  - component: {fileID: 8751231855065527891}
   m_Layer: 0
   m_Name: TrafficCone (2)
   m_TagString: obastcle
@@ -92,6 +93,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0139999995, y: 0.013999997, z: 0.15377478}
   m_Center: {x: 0, y: 0, z: 0.06988739}
+--- !u!114 &8751231855065527891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4748569200975948574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6821644af877a864e83eabe7ce99b564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colide: {fileID: 8928223641012641915}
 --- !u!1 &4799307799431631386
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +247,7 @@ GameObject:
   - component: {fileID: 5071127202972420549}
   - component: {fileID: 5071127202971290373}
   - component: {fileID: 6759211014519143331}
+  - component: {fileID: 7450961394195081192}
   m_Layer: 0
   m_Name: TrafficCone
   m_TagString: obastcle
@@ -313,6 +328,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0139999995, y: 0.013999997, z: 0.15377478}
   m_Center: {x: 0, y: 0, z: 0.06988739}
+--- !u!114 &7450961394195081192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5071127202969294277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6821644af877a864e83eabe7ce99b564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colide: {fileID: 6759211014519143331}
 --- !u!1 &6438625331774046324
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +353,7 @@ GameObject:
   - component: {fileID: 8780335476760695095}
   - component: {fileID: 727168588426881443}
   - component: {fileID: 6077216683311788683}
+  - component: {fileID: 48997392696276113}
   m_Layer: 0
   m_Name: TrafficCone (1)
   m_TagString: obastcle
@@ -405,6 +434,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0139999995, y: 0.013999997, z: 0.15377478}
   m_Center: {x: 0, y: 0, z: 0.06988739}
+--- !u!114 &48997392696276113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6438625331774046324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6821644af877a864e83eabe7ce99b564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colide: {fileID: 6077216683311788683}
 --- !u!1 &8893136518427355451
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,6 +459,7 @@ GameObject:
   - component: {fileID: 753887650627161046}
   - component: {fileID: 7323869994826908241}
   - component: {fileID: 6252306431865382823}
+  - component: {fileID: 5111151143678133675}
   m_Layer: 0
   m_Name: TrafficCone (3)
   m_TagString: obastcle
@@ -497,6 +540,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0139999995, y: 0.013999997, z: 0.15377478}
   m_Center: {x: 0, y: 0, z: 0.06988739}
+--- !u!114 &5111151143678133675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8893136518427355451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6821644af877a864e83eabe7ce99b564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colide: {fileID: 6252306431865382823}
 --- !u!1001 &5515635099909516426
 PrefabInstance:
   m_ObjectHideFlags: 0

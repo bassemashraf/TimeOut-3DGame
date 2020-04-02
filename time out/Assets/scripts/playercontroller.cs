@@ -24,14 +24,14 @@ public class playercontroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-  
-        if (!playermang.gamestarted) 
+
+        if (!playermang.gamestarted)
         {
             return;
         }
 
-        if (forwardspeed<=maxspeed)
-        forwardspeed+=0.5f*Time.deltaTime;
+        if (forwardspeed <= maxspeed)
+            forwardspeed += 0.5f * Time.deltaTime;
 
 
         animator.SetBool("gamestarted", true);
@@ -47,12 +47,12 @@ public class playercontroller : MonoBehaviour
         if (swipemanager.swipeLeft)
         {
             animator.SetBool("isSlide", false);
-             desiredline--;
-             if (desiredline == -1)
-             {
-                 desiredline = 0;
-             }
-            
+            desiredline--;
+            if (desiredline == -1)
+            {
+                desiredline = 0;
+            }
+
         }
         if (controller.isGrounded == true && swipemanager.swipeUp)
         {
@@ -60,10 +60,10 @@ public class playercontroller : MonoBehaviour
             animator.SetBool("isJump", true);
             jump();
         }
-        if(swipemanager.swipeDown)
+        if (swipemanager.swipeDown)
         {
 
-             StartCoroutine(Slide());
+            StartCoroutine(Slide());
 
         }
 
@@ -89,6 +89,8 @@ public class playercontroller : MonoBehaviour
         controller.center = controller.center;
 
     }
+   
+   
     private void FixedUpdate()
     {
         if (!playermang.gamestarted)
@@ -110,6 +112,16 @@ public class playercontroller : MonoBehaviour
         }
            
     }
+    private void skipobastcle() 
+    {
+        if (playermang.revive == true) 
+        {
+            controller.center = new Vector3(0, 0, 0);
+            controller.height = 0;
+            controller.radius = 0;
+
+        }
+    }
     private IEnumerator  Slide() 
     {
         animator.SetBool("isSlide", true);
@@ -120,4 +132,5 @@ public class playercontroller : MonoBehaviour
         controller.height = 2;
         animator.SetBool("isSlide", false);
     }
+
 }
