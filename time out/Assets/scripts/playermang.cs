@@ -32,7 +32,8 @@ public class playermang : MonoBehaviour
 
         Highscore.text = "HS: " + m.load();
         //Highscore.text= (PlayerPrefs.GetInt("HS")).ToString();
-
+     
+        PlayerPrefs.SetString("R", "false");
     }
 
     // Update is called once per frame
@@ -42,6 +43,7 @@ public class playermang : MonoBehaviour
         Gamescore.text = "Score: " + (int)scoree;
         //   Gamescore.text = "BASD";
 
+      //  events e = new events();
 
         if (GameOver || time.text == "" + 0)
         {
@@ -50,6 +52,7 @@ public class playermang : MonoBehaviour
 
             gameoverpanel.SetActive(true);
         }
+        
         if (GameOver)
         {
             //  if (scoree > PlayerPrefs.GetInt("HS"))
@@ -92,9 +95,18 @@ public class playermang : MonoBehaviour
             scoree = scoree + Time.deltaTime * 10;
         }
         time.text = "" + (int)Timeseconds;
+   
+        if (PlayerPrefs.GetString("R")=="true")
+        {
+            GameOver = false;
+            Timeseconds = 30f;
+            gameoverpanel.SetActive(false) ;
+            Time.timeScale =1;
+            PlayerPrefs.SetString("R", "false");
+        }
         if (swipemanager.tap)
         {
-
+             
             gamestarted = true;
             Destroy(startingtext);
         }
